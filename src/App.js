@@ -40,15 +40,16 @@ class App extends React.Component {
       {color:'blue',value:'ATTRACTION'},
       {color:'green',value:'MARRIAGE'},
       {color:'white',value:'ENEMY'},
-      {color:'pink',value:'FRSIBLINGSIEND'}
+      {color:'pink',value:'SIBLINGS'}
       ];
     for(i=6;i>1;i--){
       var rm=(count % i) - 1;
-      console.log(count +" "+i+" "+rm);
+      /*console.log(count +" "+i+" "+rm);*/
       if(rm===-1){
         rm=i-1;
       }
       flame.splice(rm,1);
+      /*flame.map(v=>console.log(v));*/
     }
    
     this.setState({
